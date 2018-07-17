@@ -1,0 +1,49 @@
+block config
+  include config/variables
+
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Helados | #{title}
+    meta(name="description" content="#{descripcion}")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="stylesheets/styles.css")
+  body
+    header
+      .ed-container
+        .ed-item.web-35
+          include blocks/logo
+        .ed-item.web-65.web-main-end
+          #mostrar-menu.icon-menu Menú
+          ul.ed-menu.web-horizontal
+            include blocks/menu
+  
+    #banner.ed-container.banner
+      .ed-item
+        block banner
+    
+  
+    #main.ed-container
+      main.ed-item.web-70
+        block main
+      aside.ed-item.web-30
+        include blocks/aside
+    footer
+      .ed-container
+        .ed-item
+          include blocks/footer
+          
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+  script(src="javascripts/scripts.js")
+  
+     
+          
+          
+          
+          
+          
+          
+          
+          
+          
